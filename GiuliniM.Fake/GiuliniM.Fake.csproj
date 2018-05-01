@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A5824E81-4ED5-4891-AC9B-A8EF18603CA0}</ProjectGuid>
+    <ProjectGuid>{B481FA48-4891-4F5A-90F6-F4FF716A6D58}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GiuliniM.Core</RootNamespace>
-    <AssemblyName>GiuliniM.Core</AssemblyName>
+    <RootNamespace>GiuliniM.Fake</RootNamespace>
+    <AssemblyName>GiuliniM.Fake</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,8 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Diagnostics\StopwatchExtensions.cs" />
-    <Compile Include="Reflection\Extensions.cs" />
+    <Compile Include="FakeFactory.cs" />
+    <Compile Include="IFakeFactory.cs" />
+    <Compile Include="RandomExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
